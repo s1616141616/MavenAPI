@@ -1,0 +1,28 @@
+https://home.openweathermap.org/api_keys
+s1076431
+089e27e805692abf8c050f333c49d4fe
+
+
+https://maven.apache.org/download.cgi
+type mvn in cmd to check 
+to set environmental variable go mkyong.com
+add maven integration for eclipse from eclipse msrkrt plsce
+add dependencies on pom.xml file
+	maven TestNG //https://mvnrepository.com/artifact/org.testng/testng/6.14.3
+	rest assured //https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured/2.9.0
+	json path //https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path/2.4.0
+	maven json schema validator //https://mvnrepository.com/artifact/com.jayway.restassured/json-schema-validator/2.2.0
+click on save jar files will be downloaded under user/saif/.m2 folder
+also selenium html unit driver / selenium maven
+
+https://jsonpath.curiousconcept.com/ //json path expression testing
+http://jsonviewer.stack.hu/ //for json view
+
+if red mark in dependencies
+go to cmd
+cd to project directory
+in command prompt : mvn clean install //to download all jar files in pom.xml
+also right click on project select maven select update project
+
+mvn test to run tests in command prompt
+mvn test -DskipTests=true //to avoid all test cases only for build
