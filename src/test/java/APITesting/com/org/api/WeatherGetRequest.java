@@ -13,7 +13,7 @@ public class WeatherGetRequest {
 
 	// Simple get request for getting weather request by city name
 
-	@Test
+//	@Test
 	public void Test_01() {
 		
 		Response resp = when().
@@ -23,7 +23,7 @@ public class WeatherGetRequest {
 		assertTrue(true);
 	}
 
-	@Test
+//	@Test
 	public void Test_02() {
 
 		Response resp = when().
@@ -36,7 +36,7 @@ public class WeatherGetRequest {
 	}
 
 	// use parameter
-	@Test
+//	@Test
 	public void Test_03() {
 
 		Response resp = given().
@@ -52,7 +52,7 @@ public class WeatherGetRequest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void Test_04() {
 
 						given().
@@ -65,7 +65,7 @@ public class WeatherGetRequest {
 
 	}
 
-	@Test
+//	@Test
 	public void Test_05() {
 
 		Response resp = given().
@@ -78,7 +78,7 @@ public class WeatherGetRequest {
 		System.out.println(".......................");
 	}
 
-	@Test
+//	@Test
 	public void Test_06() {
 
 		Response resp = given().
@@ -92,7 +92,7 @@ public class WeatherGetRequest {
 		System.out.println(resp.asString());
 	}
 
-	@Test
+//	@Test
 	public void Test_07() {
 
 		Response resp = given().
@@ -106,7 +106,7 @@ public class WeatherGetRequest {
 		System.out.println(resp.asString());
 	}
 	
-	@Test
+//	@Test
 	public void Test_08() {
 		
 		String weatherReport = given().
@@ -122,7 +122,7 @@ public class WeatherGetRequest {
 		System.out.println(weatherReport);
 	}
 	
-	@Test
+//	@Test
 	public void Test_09() {
 		
 		Response resp = given().
@@ -153,15 +153,15 @@ public class WeatherGetRequest {
 						param("id","2172797").
 						param("appid", "089e27e805692abf8c050f333c49d4fe").
 						when().
-						get("https://samples.openweathermap.org/data/2.5/weather");
+						get("https://api.openweathermap.org/data/2.5/weather");
 
-		String responseID = resp.
-							then().
-							contentType(ContentType.JSON).
-							extract().
-							path("weather[0].description");
+		String responseByID = 	resp.
+								then().
+								contentType(ContentType.JSON).
+								extract().
+								path("weather[0].description");
 		
-		System.out.println("ResponseID issssssssssssss " +responseID);
+		System.out.println("ResponseID issssssssssssss " +responseByID);
 		
 		
 		String lon =	String.valueOf(resp.
@@ -180,6 +180,22 @@ public class WeatherGetRequest {
 						path("coord.lat"));
 				
 		System.out.println("Lattitude is "+ lat);
-					}
 
+		String respByCoordinates =	 	given().
+										param("lat",lat).
+										param("lon", lon).
+										param("appid", "089e27e805692abf8c050f333c49d4fe").
+										when().
+										get("https://api.openweathermap.org/data/2.5/weather").
+										then().
+										contentType(ContentType.JSON).
+										extract().
+										path("weather[0].description");
+		
+		System.out.println(respByCoordinates);
+
+		Assert.assertEquals(responseByID, respByCoordinates);
+	
+	}
+	
 }

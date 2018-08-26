@@ -5,7 +5,7 @@
     <classes>
       <class name="APITesting.com.org.api.WeatherGetRequest">
         <methods>
-          <include name="Test_01"/>
+          <include name="Test_10"/>
         </methods>
       </class> <!-- APITesting.com.org.api.WeatherGetRequest -->
     </classes>

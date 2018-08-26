@@ -26,3 +26,7 @@ also right click on project select maven select update project
 
 mvn test to run tests in command prompt
 mvn test -DskipTests=true //to avoid all test cases only for build
+
+https://github.com/typicode/json-server // follow the instruction
+download & install Nodejs  //javaScript
+set environmental veriable
