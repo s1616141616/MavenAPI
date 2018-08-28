@@ -29,4 +29,14 @@ mvn test -DskipTests=true //to avoid all test cases only for build
 
 https://github.com/typicode/json-server // follow the instruction
 download & install Nodejs  //javaScript
-set environmental veriable
+set environmental variable
+
+TO INSTALL JSON SERVER
+go to cmd
+type: npm install -g json-server to install json server
+To RUN JSON SERVER Go to the file location where db.json was created using cd command
+type: json-server --watch db.json
+
+ 
+
+## a POST/ PUT OR PATCH request shoild include Content-type: application/json header to use the JSON

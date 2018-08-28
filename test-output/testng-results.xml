@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1539" started-at="2018-08-26T12:15:57Z" finished-at="2018-08-26T12:15:59Z">
+  <suite name="Default suite" duration-ms="1495" started-at="2018-08-28T05:24:08Z" finished-at="2018-08-28T05:24:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1539" started-at="2018-08-26T12:15:57Z" finished-at="2018-08-26T12:15:59Z">
-      <class name="APITesting.com.org.api.JSONServerRequest">
-        <test-method status="PASS" signature="Test_01()[pri:0, instance:APITesting.com.org.api.JSONServerRequest@5e3a8624]" name="Test_01" duration-ms="1514" started-at="2018-08-26T12:15:57Z" finished-at="2018-08-26T12:15:59Z">
+    <test name="Default test" duration-ms="1495" started-at="2018-08-28T05:24:08Z" finished-at="2018-08-28T05:24:10Z">
+      <class name="APITesting.JSONServerRequest">
+        <test-method status="PASS" signature="Test_01()[pri:0, instance:APITesting.JSONServerRequest@5e3a8624]" name="Test_01" duration-ms="1473" started-at="2018-08-28T05:24:08Z" finished-at="2018-08-28T05:24:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_01 -->
-      </class> <!-- APITesting.com.org.api.JSONServerRequest -->
+      </class> <!-- APITesting.JSONServerRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

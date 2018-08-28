@@ -1,4 +1,4 @@
-package APITesting.com.org.api;
+package APITesting;
 
 import static org.testng.Assert.assertTrue;
 
